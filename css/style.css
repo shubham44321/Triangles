@@ -6,14 +6,10 @@
 }
 body {
   font-family: "Montserrat", "sans-serif";
-  background: linear-gradient(
-    90deg,
-    hsla(197, 100%, 63%, 1) 0%,
-    hsla(294, 100%, 55%, 1) 100%
-  );
+  background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, #e81aff 100%);
 }
-input{
- padding-left: 10px; 
+input {
+  padding-left: 10px;
 }
 .container {
   width: 80%;
@@ -22,7 +18,7 @@ input{
   margin: 4rem auto;
 }
 
-.container > a{
+.container > a {
   text-decoration: none;
 }
 
@@ -44,16 +40,16 @@ input{
   transition: 1s ease;
 }
 
-.container-angle{
+.container-angle {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: auto;
-  padding-left:30%;
+  padding-left: 30%;
   padding-right: 30%;
 }
-.btn{
+.btn {
   display: block;
   margin: auto;
   width: 30%;
@@ -67,25 +63,25 @@ input{
   cursor: pointer;
   font-weight: 600;
 }
-.heading{
+.heading {
   margin-top: 1.5rem;
   font-weight: 700;
   text-align: center;
 }
-.inps-div{
+.inps-div {
   margin-top: 2rem;
 }
-.angle-inp{
+.angle-inp {
   width: 50px;
   height: 50px;
   margin-left: 2rem;
 }
-.btn-angle{
+.btn-angle {
   background-color: rgb(100, 9, 110);
   display: block;
   margin: 2rem auto;
 }
-.angle-op{
+.angle-op {
   border: 2px solid black;
   font-weight: 700;
   text-align: center;
@@ -93,7 +89,7 @@ input{
   padding: 1rem;
 }
 
-.hypo-op{
+.hypo-op {
   border: 2px solid black;
   font-weight: 700;
   text-align: center;
@@ -103,7 +99,7 @@ input{
   margin-left: -1.2rem;
 }
 
-.back{
+.back {
   margin-top: 1rem;
   background-color: #ffffff;
   width: 100%;
@@ -113,57 +109,58 @@ input{
   text-align: center;
 }
 
-.back > p{
+.back > p {
   margin-top: 1rem;
   font-weight: 700;
-  
 }
 
-.inp-lbl{
+.inp-lbl {
   padding-left: 1rem;
 }
 
-.side-inp{
+.side-inp {
   width: 80px;
   height: 50px;
 }
 
-.overline{
-  text-decoration-line:overline ;
+.overline {
+  text-decoration-line: overline;
 }
 
-.radio-box{
+.radio-box {
   text-align: left;
   margin-top: 1rem;
-
 }
 
-.radio-lbl{
+.radio-lbl {
   font-weight: 600;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
+.warning {
+  color: rgb(100, 9, 110);
+}
+
 @media only screen and (max-width: 720px) {
-  .container-angle{
-    padding-left:10%;
+  .container-angle {
+    padding-left: 10%;
     padding-right: 10%;
   }
-  .inps-div{
-    padding-left:0%;
+  .inps-div {
+    padding-left: 0%;
     padding-right: 0%;
   }
-  .side-inp{
+  .side-inp {
     width: 50px;
     height: 30px;
   }
-  .angle-inp{
+  .angle-inp {
     margin-left: 1rem;
   }
-  .btn{
+  .btn {
     width: 50%;
   }
-  
 }
