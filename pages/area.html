@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fun with Triangles</title>
+</head>
+
+<body>
+
+    <div class="container-angle">
+        <a href="../index.html">
+            <div class="back">
+                <p>&lt Go Back</p>
+            </div>
+        </a>
+        <h3 class="heading">Calculate Area</h3>
+        <p class="heading">Select an option below as per the data you have for a triangle</p>
+        <div class="radio-box">
+            <label class="radio-lbl" for="area1">
+                <input onclick="getValue(this.value)" value="method1" type="radio" name="area" id="area1"> If you
+                have base and height
+                length
+            </label>
+            <br>
+            <br>
+            <label class="radio-lbl" for="area2">
+                <input onclick="getValue(this.value)" value="method2" type="radio" name="area" id="area2"> If you
+                have length of 3 sides
+            </label>
+            <br>
+            <br>
+            <label class="radio-lbl" for="area3">
+                <input onclick="getValue(this.value)" value="method3" type="radio" name="area" id="area3"> If you
+                have length of 2 sides
+                and included angle
+            </label>
+            <br>
+            <br>
+        </div>
+        <div id="method1" class="hidden">
+            <form id="formM1">
+                <div class="inps-div">
+                    <span class="side-lbl">b=</span> <input min="0.0001" step="0.00001" type="number" id="base"
+                        class="side-inp" required>
+                    <span class="side-lbl">h=</span> <input min="0.0001" step="0.00001" type="number" id="height"
+                        class="side-inp" required>
+                </div>
+                <button class="btn btn-angle" type="submit">submit</button>
+                <p class="heading">Area will be calculated here-</p>
+                <div class="hypo-op">
+                    <p id="method1-res">Area = <span>1/2*base*height</span></p>
+                </div>
+            </form>
+        </div>
+        <div id="method2" class="hidden">
+            <form id="formM2">
+                <div class="inps-div">
+                    <span class="side-lbl">a=</span> <input min="0.0001" step="0.00001" type="number" id="sa"
+                        class="side-inp" required>
+                    <span class="side-lbl">b=</span> <input min="0.0001" step="0.00001" type="number" id="sb"
+                        class="side-inp" required>
+                    <span class="side-lbl">c=</span> <input min="0.0001" step="0.00001" type="number" id="sc"
+                        class="side-inp" required>
+                </div>
+                <button class="btn btn-angle" type="submit">submit</button>
+                <p class="heading">Area will be calculated here-</p>
+                <div class="hypo-op">
+                    <p id="method2-res">Area = <span class="overline">√s(s-a)(s-b)(s-c)</span></p>
+                </div>
+            </form>
+        </div>
+        <div id="method3" class="hidden">
+            <form id="formM3">
+                <div class="inps-div">
+                    <span class="side-lbl">b=</span> <input min="0.0001" step="0.00001" type="number" id="s1"
+                        class="side-inp" required>
+                    <span class="side-lbl">c=</span> <input min="0.0001" step="0.00001" type="number" id="s2"
+                        class="side-inp" required>
+                    <span class="side-lbl">&Theta;=</span> <input min="0.0001" step="0.00001" type="number" id="angle"
+                        class="side-inp" required>
+                </div>
+                <button class="btn btn-angle" type="submit">submit</button>
+                <p class="heading">Area will be calculated here-</p>
+                <div class="hypo-op">
+                    <p id="method3-res">Area = 1/2*b*c*sin(&Theta;)</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/area.js"></script>
+</body>
+
+</html>

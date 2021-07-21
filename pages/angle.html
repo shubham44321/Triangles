@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Fun with Triangles</title>
+</head>
+
+<body>
+    <form id="form">
+        <div class="container-angle">
+            <a href="../index.html">
+                <div class="back">
+                    <p>&lt Go Back</p>
+                </div>
+            </a>
+            <p class="heading">Enter the angles in below input boxes and we will tell you if those angles make a
+                Triangle
+            </p>
+            <div class="inps-div">
+                <input min="1" max="180" type="number" id="angle1" class="angle-inp" required>
+                <input min="1" max="180" type="number" id="angle2" class="angle-inp" required>
+                <input min="1" max="180" type="number" id="angle3" class="angle-inp" required>
+            </div>
+            <button class="btn btn-angle" id="angle-submit" type="submit">submit</button>
+            <div class="angle-op">
+                <p id="angle-res">Output will be shown here</p>
+            </div>
+        </div>
+    </form>
+    <script src="../js/angle.js"></script>
+</body>
+
+</html>
