@@ -142,6 +142,42 @@ input {
 
 .warning {
   color: rgb(100, 9, 110);
+  text-align: center;
+}
+
+.container-quiz {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.container-quiz > div {
+  width: 80%;
+  color: #1d1d1d;
+  background-color: rgba(0, 0, 255, 0.2);
+  padding: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.options {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.opt-label {
+  margin-right: 1rem;
+  margin-left: 0.6rem;
+  cursor: pointer;
+}
+
+.radio {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 720px) {

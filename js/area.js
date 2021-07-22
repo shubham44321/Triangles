@@ -38,14 +38,21 @@ formM2.addEventListener("submit", (event) => {
   let b = parseFloat(document.getElementById("sb").value);
   let c = parseFloat(document.getElementById("sc").value);
   if (a < b + c && b < a + c && c < b + a) {
-    warningTxt.classList.contains("hidden")
-      ? ""
-      : warningTxt.classList.add("hidden");
+    // warningTxt.classList.contains("hidden")
+    //   ? ""
+    //   : warningTxt.classList.add("hidden");
     let s = (a + b + c) / 2;
     let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
     document.getElementById("method2-res").innerHTML = `Area = ${area}`;
   } else {
-    warningTxt.classList.remove("hidden");
+    // warningTxt.classList.remove("hidden");
+    document.getElementById(
+      "method2-res"
+    ).innerHTML = `Area = <span class="overline">√s(s-a)(s-b)(s-c)`;
+    document.getElementById("inp-div").style.paddingLeft = "10%";
+    alert(
+      "Enter valid side lengths such that each side length should be less than sum of other two sides"
+    );
   }
 });
 
