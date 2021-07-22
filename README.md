@@ -1,2 +1,2 @@
 # Triagnles
- [Fun with traingles.](https://shubham44321.github.io/Triangles/)
+ [Fun with traingles.](https://triangles-b0e4cb.netlify.app/)
